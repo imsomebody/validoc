@@ -9,6 +9,9 @@
     "build": "tsc src/index.ts --outDir dist",
     "test": "mocha -r ts-node/register 'src/tests/**/*.ts'"
   },
+  "repository": {
+    "url": "https://github.com/imsomebody/validoc.git"
+  },
   "author": "Davi Viana",
   "license": "ISC",
   "devDependencies": {
