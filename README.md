@@ -9,15 +9,15 @@ Validação de tipos comuns de documentos e formatos brasileiros em JavaScript.
 Instalar o pacote:
 
 npm:
-`npm install @todo/set-name`
+`npm install validoc`
 
 Importar a função:
-`import { useValidateDocument } from '@todo/set-name'`
+`import { useValidateDocument } from 'validoc'`
 
 Utilização:
 
 ```
-import { useValidateDocument } from '@todo/set-name'
+import { useValidateDocument } from 'validoc'
 
 async function saySomething() {
     console.log(await useValidateDocument("123", "cnpj")) // retorna falso, invalido
