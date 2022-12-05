@@ -16,6 +16,9 @@ Importar a função:
 
 Utilização:
 
+O pacote exporta a função `useValidateDocument` que recebe o valor a ser verificado e o tipo de valor. O tipo é declarado em `type ValidatorType`.
+A função é assíncrona e deve ser aguardada. Retorna verdadeiro ou falso, de acordo com a validação.
+
 ```
 import { useValidateDocument } from 'validoc'
 
@@ -29,8 +32,10 @@ saySomething.call()
 
 ## Tipos Suportados
 
-| Documento | type | Implementado |
-| --------- | ---- | ------------ |
-| RG        | rg   | Não          |
-| CPF       | cpf  | Sim          |
-| CNPJ      | cnpj | Sim          |
+Os seguintes tipos são suportados.
+
+| Documento | type | Implementado | Modo                                                                                       |
+|-----------|------|--------------|--------------------------------------------------------------------------------------------|
+| RG        | rg   | Não          | Regex (identifica os blocos)                                                               |
+| CPF       | cpf  | Sim          | Algoritmo (identifica a consistência pelo algoritmo, retorna positivo para CPFs de teste)  |
+| CNPJ      | cnpj | Sim          | Algoritmo (identifica a consistência pelo algoritmo, retorna positivo para CNPJs de teste) |
