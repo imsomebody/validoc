@@ -34,21 +34,18 @@ export const cpfValidationHandler: Validator = async (value) => {
     return value % 11 >= 10 ? 0 : value % 11
   }
 
-  for (const { index, value } of Array.from(cDoc.getDocumentValue()).map(
-    (value, index) => ({
-      value,
-      index,
-    })
-  )) {
+  function getCountable(base) {
+    return Array.from(base).map((value, index) => ({value, index}))
+  }
+
+  for (const { index, value } of getCountable(cDoc.getDocumentValue())) {
     checkBuff.push(Number(value) * (index + 1))
   }
 
   let reducedBuff = reduceBuffer()
   let verification0 = resolveReducedBuffer(reducedBuff)
 
-  for (const { index, value } of Array.from(
-    cDoc.getDocumentValue() + verification0.toString()
-  ).map((value, index) => ({ value, index }))) {
+  for (const { index, value } of getCountable(cDoc.getDocumentValue() + verification0.toString())) {
     checkBuff.push(Number(value) * index)
   }
 
