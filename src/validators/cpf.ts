@@ -1,5 +1,9 @@
 import { DocumentValidatorComparer, Validator } from "."
 
+/**
+ * Classe helper da validação.
+ * @internal
+ */
 export class CpfDocument implements DocumentValidatorComparer {
   getDocumentValue() {
     return this.value.substring(this.startIndex, this.endIndex + 1)
@@ -19,6 +23,11 @@ export class CpfDocument implements DocumentValidatorComparer {
   }
 }
 
+/**
+ * Handler de validação padrão para CPFs.
+ * @param value o valor a validar
+ * @returns {Boolean}
+ */
 export const cpfValidationHandler: Validator = async (value) => {
   const cDoc = new CpfDocument(value.toString())
 

@@ -1,6 +1,11 @@
 import { Validator } from "."
 import { getNumbers } from "../helpers"
 
+/**
+ * Handler de validação padrão para CNPJs.
+ * @param value o valor a validar
+ * @returns {Boolean}
+ */
 export const cnpjValidationHandler: Validator = async (value) => {
   const cnpj = getNumbers(value.toString())
 
