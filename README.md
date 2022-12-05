@@ -36,6 +36,6 @@ Os seguintes tipos são suportados.
 
 | Documento | type | Implementado | Modo                                                                                       |
 |-----------|------|--------------|--------------------------------------------------------------------------------------------|
-| RG        | rg   | Não          | Regex (identifica os blocos)                                                               |
+| RG        | rg   | Sim          | Regex (identifica os blocos)                                                               |
 | CPF       | cpf  | Sim          | Algoritmo (identifica a consistência pelo algoritmo, retorna positivo para CPFs de teste)  |
 | CNPJ      | cnpj | Sim          | Algoritmo (identifica a consistência pelo algoritmo, retorna positivo para CNPJs de teste) |
