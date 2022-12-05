@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "lint": "prettier --write .",
     "build": "tsc src/index.ts --outDir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
