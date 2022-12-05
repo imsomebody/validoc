@@ -1,0 +1,17 @@
+{
+  "name": "validoc",
+  "version": "1.0.0",
+  "description": "Valide formatos Brasileiros de documento.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc src/index.ts --outDir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davi Viana",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "ts-node": "^10.9.1"
+  }
+}
