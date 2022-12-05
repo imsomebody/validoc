@@ -7,12 +7,16 @@
     "start": "ts-node src/index.ts",
     "lint": "prettier --write .",
     "build": "tsc src/index.ts --outDir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register 'src/tests/**/*.ts'"
   },
   "author": "Davi Viana",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
     "@types/node": "^18.11.10",
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0",
     "prettier": "^2.8.0",
     "ts-node": "^10.9.1"
   }
