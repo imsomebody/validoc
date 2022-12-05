@@ -1,6 +1,6 @@
 # Validoc
 
-![CI](https://github.com/imsomebody/validoc/actions/workflows/main.yml/badge.svg)
+![CI](https://github.com/imsomebody/validoc/actions/workflows/main.yml/badge.svg) [![npm version](https://badge.fury.io/js/validoc.svg)](https://badge.fury.io/js/validoc)
 
 Validação de tipos comuns de documentos e formatos brasileiros em JavaScript.
 
