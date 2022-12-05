@@ -1,6 +1,6 @@
 {
   "name": "validoc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Valide formatos Brasileiros de documento.",
   "main": "src/index.ts",
   "scripts": {
